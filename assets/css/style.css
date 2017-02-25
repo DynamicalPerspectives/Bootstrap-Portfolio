@@ -1,0 +1,123 @@
+/*File for Basic-Portfolio for Jeanmarie Martinko*/
+/*Note: I modified some of the default styling in the "cyborg" bootstrap theme to my liking*/
+ 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+	font-size: 18px;
+	background: url("../images/swirl_pattern.png"); 
+}
+
+/*Added padding since default didn't look as nice without it.*/
+.navbar {
+padding: 10px;
+}
+
+.navbar-brand {
+font-size: 35px;
+}
+
+.panel-heading {
+	background: #4aaaa5;
+}
+
+.container {
+	box-sizing: border-box;
+	size: 960px;
+}
+
+/*#caption {
+	font-style: italic;
+	font-size: 14px;
+}*/
+
+#jmPic {
+	border-radius: 8px;
+	
+}
+
+#jmPic:hover {
+ background-image: url("assets/images/elijah.jpg");
+}
+
+.panel-body {
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.panel-title {
+	color: #ffffff;
+	font-size: 30px;
+	letter-spacing: 1.5;
+}
+
+/*Specified smaller font*/
+#sidePanel {
+	font-size: 20px;
+}
+
+/*This refers to the logos for social media sites*/
+#logos {
+	width: 95px;
+	height: 95px;	
+}
+
+/*This will provide some "graying/opacity" when hovering over social media logos*/
+#logos:hover {
+	opacity: 0.5;
+}
+
+/*The ".box" and ".banner classes are to format the portfolio menu images and text*/
+.box {
+	box-sizing: border-box;
+	width: 220px;
+	height: 180px;
+	padding: 10px;
+	padding-bottom: 20px;
+	display:inline-flex;
+	position: relative;
+}
+
+.banner {
+	position: absolute;
+	width: 200px;
+	bottom: 10px;
+	margin-left: 10px;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	text-align: center;
+	font-size: 18px;	
+}
+
+/*Modifed "cyborg" theme button colors*/
+.btn  {
+	background: #4aaaa5;
+	color: #ffffff;
+}
+
+/* Modified "cyborg" theme footer styling*/
+.footer {
+	border-top-style: solid;
+	border-top-width: 10px;
+	border-top-color: #4aaaa5;
+	background: black;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 90px;
+	vertical-align: center;
+  	justify-content: center;
+  	padding: 30px;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
