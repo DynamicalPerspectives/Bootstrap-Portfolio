@@ -35,8 +35,12 @@ font-size: 35px;
 }*/
 
 #jmPic {
+<<<<<<< HEAD
 	border-radius: 8px;
 	
+=======
+	border-radius: 8px;	
+>>>>>>> ac6fae4e1383dca74dc919617243711dd6ab7462
 }
 
 #jmPic:hover {
