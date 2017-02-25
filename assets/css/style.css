@@ -34,23 +34,36 @@ font-size: 35px;
 	font-size: 14px;
 }*/
 
-#jmPic {
-<<<<<<< HEAD
-	border-radius: 8px;
-	
-=======
-	border-radius: 8px;	
->>>>>>> ac6fae4e1383dca74dc919617243711dd6ab7462
+a {
+
+	text-align: center;
+
 }
+
+p {
+
+	text-align: left;
+}
+
+#jmPic {
+
+	border-radius: 8px;
+
+}
+
 
 #jmPic:hover {
  background-image: url("assets/images/elijah.jpg");
 }
 
 .panel-body {
-	padding: 20px;
+	/*padding: 20px;*/
 	box-sizing: border-box;
+	text-align:center;
+	/*align-content: center;*/
+	/*justify-content: left;*/
 }
+
 
 .panel-title {
 	color: #ffffff;
@@ -64,9 +77,18 @@ font-size: 35px;
 }
 
 /*This refers to the logos for social media sites*/
-#logos {
+/*#logos {
 	width: 95px;
 	height: 95px;	
+}*/
+
+
+#logos {
+	width: 30%;
+   height: 80%;
+   display: inline-block;
+   /*text-align: center;*/
+   margin: 0 auto;
 }
 
 /*This will provide some "graying/opacity" when hovering over social media logos*/
@@ -77,18 +99,19 @@ font-size: 35px;
 /*The ".box" and ".banner classes are to format the portfolio menu images and text*/
 .box {
 	box-sizing: border-box;
-	width: 220px;
-	height: 180px;
+	width: 240px;
+	height: 205px;
 	padding: 10px;
 	padding-bottom: 20px;
-	display:inline-flex;
+	display:inline-block;
 	position: relative;
+
 }
 
 .banner {
 	position: absolute;
-	width: 200px;
-	bottom: 10px;
+	width: 220px;
+	bottom: 30px;
 	margin-left: 10px;
 	color: #ffffff;
 	background-color: #4aaaa5;
