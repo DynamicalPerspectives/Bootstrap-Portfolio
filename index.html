@@ -1,98 +1,111 @@
-<!--Added additional customization to style:
+<!-- Added additional customization to style:
 (i) sticky footer;
-(ii) hover effect on navigation bar, changing colors;
-(iii) "secondary" profile photo appears upon hover;
-(iv) vertical and horizontal alignment in certain sections achieved with  various combinations (as appropriate) of "display: inline-flex", "align-items: center", and "justify-content- center"-->
-
+(ii) hover effect and secondary image for profile pic -->
+<!--  -->
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
-	<meta name=“viewport” content=“width=device-width, initial-scale=1”>
+	<meta name=“viewport” content=“width=device-width, initial-scale=1”> 
 	<meta charset="utf-8">
-	<title>Basic Portfolio_JM</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<title>Bootstrap-Portfolio_JM</title>
+	<!-- Use below for alternate stylesheets, if desired: -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="
+https://bootswatch.com/cyborg/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
+<!-- Header, Brand and Navigation Row -->
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Jeanmarie Martinko</a>
+      </div>
 
-<!-- header with nav bar Name -->
-	<div id="headBox">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<!-- Middle section with 2 panels: -->
+  <div class="container">
+      <div class="col-md-8">
+        <div class="panel">
+          		<div class="panel-heading">
+          			<h1 class="panel-title">About Me</h1>
+              </div>
+                <div class="panel-body">
+          			   <div class="row">
+          				    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <!-- Added secondary image that appears when hovering over "jmPic" -->
+            				    
+                        <figure class="figure">
+                        <img id="jmPic" src="assets/images/JMandAnnamae.jpg" alt="an image of JM with white and grey kitten" onmouseover="this.src='assets/images/Elijah.jpg'" alt="an image of JM riding a horse" onmouseout="this.src='assets/images/JMandAnnamae.jpg'" alt="an image of JM with white and grey kitten" class="img-thumbnail"/>
+                        <figcaption class="figure-caption text-center">Hover over me!</figcaption>
+                        </figure>
+            				    
+            			     </div>
+            		
+					            <!-- <div class="col-md-8"> -->
+			                 <p>
+  			              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam commodo, est ac auctor ornare,
+  			              eros nisi fringilla sem, non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus, luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et neque fringilla ultricies. Aenean
+  			              at feugiat elit, a posuere justo. Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id posuere sem congue a.
+                      <br>
+                      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                      </p>
+                      <br>
+                      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+			                 </p>
+            		      <!-- </div> -->
+				          </div>
+          	   </div>
+            </div>
+        </div>
+   
+      <div class="col-md-4">
+        <div class="panel">
+          <div class="panel-heading">
+            <p class="panel-title text-center" id="sidePanel">Connect with Me</p>
+          </div>
+          <div class="panel-body">
+        
+            	<a id="gitH" href="https://github.com/DynamicalPerspectives" target="_blank"><img id="logos" src="assets/images/github.png" class="img-thumbnail img-fluid" alt="Image of the logo for Github"/></a>
 
-		<header>
-			<a href="index.html"><h1 id="jmNamebox">Jeanmarie Martinko</h1></a>
-			<nav id="navBar">
-				<a class="nav" href="index.html">About &nbsp|</a>
-				<a class="nav" href="portfolio.html">Portfolio &nbsp|</a>
-				<a class="nav" href="contact.html">Contact</a> 
-			</nav>
+      				<a id="linkIn" href="https://www.linkedin.com/in/jeanmarie-martinko-3505ba" target="_blank"><img id="logos" src="
+      				assets/images/social-linkedin-square2.png" class="img-thumbnail img-fluid" alt="Image of the logo for LinkedIn"/></a>
 
-		</header>
-
-	</div>
-	
-	
-	<!-- Contains both the (i) main bio area with pic and description and (ii) the sidebar with the social icons/aside -->
-	<div id="container">
-
-		<div class="main-box">
-
-			<br>
-
-			<div class="secBox">
-			
-				<h1>About Me</h1>
-
-				<hr>
-
+      				<a id="stackOflow" href="http://stackexchange.com/users/10158258/dynamical" target="_blank"><img id="logos" src="assets/images/stackoverflow_rounded.png" class="img-thumbnail img-fluid" alt="Image of the logo for Stackoverflow"/></a>
+          </div>
+        </div>
+      </div>
+   </div>
+					
+<div class="footer">
+	<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<footer class="text-center">&copy;Copyright 2017 Jeanmarie Martinko</footer>
+				</div>
 			</div>
-			
-			<!-- Added secondary image that appears when hovering over "jmPic" -->
-
-			<div id="profilePic">
-
-			<img id="jmPic" src="assets/images/JMandAnnamae.jpg" alt="an image of JM with white and gray kitten" onmouseover="this.src='assets/images/elijah.jpg'" alt="an image of JM riding a horse" onmouseout="this.src='assets/images/JMandAnnamae.jpg'" alt="an image of JM with white and gray kitten"/>
-
-			<p>Hover over me!</p>
-
-			</div>
-
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-			<br>
-			<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-			<br>
-			<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-		
 		</div>
-		
-		<!-- Connect with Me -->
-		<aside id="connectBox">
-
-			<br>
-
-			<h2>Connect with Me</h2>
-
-				<br>
-
-			<hr>
-
-				<br>
-
-			<a id="gitH" href="https://github.com/DynamicalPerspectives" target="_blank"><img id="logos" src="assets/images/github2.png"/></a>
-
-			<a id="linkIn" href="https://www.linkedin.com/in/jeanmarie-martinko-3505ba" target="_blank"><img id="logos" src="
-			assets/images/social-linkedin-square2.png"/></a>
-
-			<a id="stackOflow" href="http://stackexchange.com/users/10158258/dynamical" target="_blank"><img id="logos" src="assets/images/stackoverflow.png"/></a>
-
-		</aside>
-
-	</div>
-
-	<footer id="footBox">&copy;Copyright 2017 Jeanmarie Martinko</footer>
-
 </div>
+
+
+	<!-- I'm not sure how this is different, if at all, from the js scripts provided by Zach in class, but putting it here as a placeholder: <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script> -->
+
+	<!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 
