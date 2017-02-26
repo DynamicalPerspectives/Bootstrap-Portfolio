@@ -45,8 +45,14 @@ p {
  background-image: url("assets/images/elijah.jpg");
 }
 
+figcaption {
+	font-style: italic;
+	font-size: 14px;
+}
+
 .panel-body {
-	/*padding: 20px;*/
+	padding: 40px;
+	/*padding: 10px;*/
 	box-sizing: border-box;
 	text-align:center;
 	/*align-content: center;*/
@@ -72,8 +78,8 @@ p {
 
 
 #logos {
-	width: 95px;
-   height: 95px;
+	width: 75px;
+   height: 75px;
    display: inline-block;
    /*text-align: center;*/
    margin: 0 auto;
@@ -106,10 +112,15 @@ p {
 	font-size: 18px;	
 }
 
-/*Modifed "cyborg" theme button colors*/
-.btn  {
+label {
+	float: left;
+}
+
+
+.btn {
 	background: #4aaaa5;
 	color: #ffffff;
+	/*float: left;*/
 }
 
 /* Modified "cyborg" theme footer styling*/
